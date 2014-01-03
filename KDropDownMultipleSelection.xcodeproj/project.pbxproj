@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E917554187689D500950397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917553187689D500950397 /* Foundation.framework */; };
+		5E917556187689D500950397 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917555187689D500950397 /* CoreGraphics.framework */; };
+		5E917558187689D500950397 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917557187689D500950397 /* UIKit.framework */; };
+		5E91755E187689D500950397 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E91755C187689D500950397 /* InfoPlist.strings */; };
+		5E917560187689D500950397 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E91755F187689D500950397 /* main.m */; };
+		5E917564187689D500950397 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E917563187689D500950397 /* AppDelegate.m */; };
+		5E917567187689D500950397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E917565187689D500950397 /* Main.storyboard */; };
+		5E91756A187689D500950397 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E917569187689D500950397 /* ViewController.m */; };
+		5E91756C187689D500950397 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E91756B187689D500950397 /* Images.xcassets */; };
+		5E917573187689D500950397 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917572187689D500950397 /* XCTest.framework */; };
+		5E917574187689D500950397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917553187689D500950397 /* Foundation.framework */; };
+		5E917575187689D500950397 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917557187689D500950397 /* UIKit.framework */; };
+		5E91757D187689D500950397 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E91757B187689D500950397 /* InfoPlist.strings */; };
+		5E91757F187689D500950397 /* KDropDownMultipleSelectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E91757E187689D500950397 /* KDropDownMultipleSelectionTests.m */; };
+		5E91758E18768A5E00950397 /* DropDownViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E91758D18768A5E00950397 /* DropDownViewCell.m */; };
+		5E91759118768B5500950397 /* DropDownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E91759018768B5500950397 /* DropDownListView.m */; };
+		5E9175931876911C00950397 /* drop_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9175921876911C00950397 /* drop_down@2x.png */; };
+		5E9175961876965100950397 /* check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9175941876965100950397 /* check_mark@2x.png */; };
+		5E9175971876965100950397 /* done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E9175951876965100950397 /* done@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E917576187689D500950397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E917548187689D400950397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E91754F187689D500950397;
+			remoteInfo = KDropDownMultipleSelection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E917550187689D500950397 /* KDropDownMultipleSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDropDownMultipleSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E917553187689D500950397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E917555187689D500950397 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E917557187689D500950397 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E91755B187689D500950397 /* KDropDownMultipleSelection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KDropDownMultipleSelection-Info.plist"; sourceTree = "<group>"; };
+		5E91755D187689D500950397 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E91755F187689D500950397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E917561187689D500950397 /* KDropDownMultipleSelection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KDropDownMultipleSelection-Prefix.pch"; sourceTree = "<group>"; };
+		5E917562187689D500950397 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E917563187689D500950397 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E917566187689D500950397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E917568187689D500950397 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E917569187689D500950397 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E91756B187689D500950397 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E917571187689D500950397 /* KDropDownMultipleSelectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KDropDownMultipleSelectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E917572187689D500950397 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5E91757A187689D500950397 /* KDropDownMultipleSelectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KDropDownMultipleSelectionTests-Info.plist"; sourceTree = "<group>"; };
+		5E91757C187689D500950397 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E91757E187689D500950397 /* KDropDownMultipleSelectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDropDownMultipleSelectionTests.m; sourceTree = "<group>"; };
+		5E91758C18768A5E00950397 /* DropDownViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownViewCell.h; sourceTree = "<group>"; };
+		5E91758D18768A5E00950397 /* DropDownViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownViewCell.m; sourceTree = "<group>"; };
+		5E91758F18768B5500950397 /* DropDownListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownListView.h; sourceTree = "<group>"; };
+		5E91759018768B5500950397 /* DropDownListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownListView.m; sourceTree = "<group>"; };
+		5E9175921876911C00950397 /* drop_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drop_down@2x.png"; sourceTree = "<group>"; };
+		5E9175941876965100950397 /* check_mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_mark@2x.png"; sourceTree = "<group>"; };
+		5E9175951876965100950397 /* done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E91754D187689D500950397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E917556187689D500950397 /* CoreGraphics.framework in Frameworks */,
+				5E917558187689D500950397 /* UIKit.framework in Frameworks */,
+				5E917554187689D500950397 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E91756E187689D500950397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E917573187689D500950397 /* XCTest.framework in Frameworks */,
+				5E917575187689D500950397 /* UIKit.framework in Frameworks */,
+				5E917574187689D500950397 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E917547187689D400950397 = {
+			isa = PBXGroup;
+			children = (
+				5E917559187689D500950397 /* KDropDownMultipleSelection */,
+				5E917578187689D500950397 /* KDropDownMultipleSelectionTests */,
+				5E917552187689D500950397 /* Frameworks */,
+				5E917551187689D500950397 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E917551187689D500950397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E917550187689D500950397 /* KDropDownMultipleSelection.app */,
+				5E917571187689D500950397 /* KDropDownMultipleSelectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E917552187689D500950397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E917553187689D500950397 /* Foundation.framework */,
+				5E917555187689D500950397 /* CoreGraphics.framework */,
+				5E917557187689D500950397 /* UIKit.framework */,
+				5E917572187689D500950397 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E917559187689D500950397 /* KDropDownMultipleSelection */ = {
+			isa = PBXGroup;
+			children = (
+				5E91758B18768A5E00950397 /* kDropDown */,
+				5E917562187689D500950397 /* AppDelegate.h */,
+				5E917563187689D500950397 /* AppDelegate.m */,
+				5E917565187689D500950397 /* Main.storyboard */,
+				5E917568187689D500950397 /* ViewController.h */,
+				5E917569187689D500950397 /* ViewController.m */,
+				5E91756B187689D500950397 /* Images.xcassets */,
+				5E91755A187689D500950397 /* Supporting Files */,
+			);
+			path = KDropDownMultipleSelection;
+			sourceTree = "<group>";
+		};
+		5E91755A187689D500950397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E9175941876965100950397 /* check_mark@2x.png */,
+				5E9175951876965100950397 /* done@2x.png */,
+				5E9175921876911C00950397 /* drop_down@2x.png */,
+				5E91755B187689D500950397 /* KDropDownMultipleSelection-Info.plist */,
+				5E91755C187689D500950397 /* InfoPlist.strings */,
+				5E91755F187689D500950397 /* main.m */,
+				5E917561187689D500950397 /* KDropDownMultipleSelection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E917578187689D500950397 /* KDropDownMultipleSelectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E91757E187689D500950397 /* KDropDownMultipleSelectionTests.m */,
+				5E917579187689D500950397 /* Supporting Files */,
+			);
+			path = KDropDownMultipleSelectionTests;
+			sourceTree = "<group>";
+		};
+		5E917579187689D500950397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E91757A187689D500950397 /* KDropDownMultipleSelectionTests-Info.plist */,
+				5E91757B187689D500950397 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E91758B18768A5E00950397 /* kDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				5E91758C18768A5E00950397 /* DropDownViewCell.h */,
+				5E91758D18768A5E00950397 /* DropDownViewCell.m */,
+				5E91758F18768B5500950397 /* DropDownListView.h */,
+				5E91759018768B5500950397 /* DropDownListView.m */,
+			);
+			path = kDropDown;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E91754F187689D500950397 /* KDropDownMultipleSelection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E917582187689D500950397 /* Build configuration list for PBXNativeTarget "KDropDownMultipleSelection" */;
+			buildPhases = (
+				5E91754C187689D500950397 /* Sources */,
+				5E91754D187689D500950397 /* Frameworks */,
+				5E91754E187689D500950397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDropDownMultipleSelection;
+			productName = KDropDownMultipleSelection;
+			productReference = 5E917550187689D500950397 /* KDropDownMultipleSelection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E917570187689D500950397 /* KDropDownMultipleSelectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E917585187689D500950397 /* Build configuration list for PBXNativeTarget "KDropDownMultipleSelectionTests" */;
+			buildPhases = (
+				5E91756D187689D500950397 /* Sources */,
+				5E91756E187689D500950397 /* Frameworks */,
+				5E91756F187689D500950397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E917577187689D500950397 /* PBXTargetDependency */,
+			);
+			name = KDropDownMultipleSelectionTests;
+			productName = KDropDownMultipleSelectionTests;
+			productReference = 5E917571187689D500950397 /* KDropDownMultipleSelectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E917548187689D400950397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = macmini17;
+				TargetAttributes = {
+					5E917570187689D500950397 = {
+						TestTargetID = 5E91754F187689D500950397;
+					};
+				};
+			};
+			buildConfigurationList = 5E91754B187689D400950397 /* Build configuration list for PBXProject "KDropDownMultipleSelection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E917547187689D400950397;
+			productRefGroup = 5E917551187689D500950397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E91754F187689D500950397 /* KDropDownMultipleSelection */,
+				5E917570187689D500950397 /* KDropDownMultipleSelectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E91754E187689D500950397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E91756C187689D500950397 /* Images.xcassets in Resources */,
+				5E9175931876911C00950397 /* drop_down@2x.png in Resources */,
+				5E9175961876965100950397 /* check_mark@2x.png in Resources */,
+				5E91755E187689D500950397 /* InfoPlist.strings in Resources */,
+				5E9175971876965100950397 /* done@2x.png in Resources */,
+				5E917567187689D500950397 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E91756F187689D500950397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E91757D187689D500950397 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E91754C187689D500950397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E91756A187689D500950397 /* ViewController.m in Sources */,
+				5E91758E18768A5E00950397 /* DropDownViewCell.m in Sources */,
+				5E917564187689D500950397 /* AppDelegate.m in Sources */,
+				5E91759118768B5500950397 /* DropDownListView.m in Sources */,
+				5E917560187689D500950397 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E91756D187689D500950397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E91757F187689D500950397 /* KDropDownMultipleSelectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E917577187689D500950397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E91754F187689D500950397 /* KDropDownMultipleSelection */;
+			targetProxy = 5E917576187689D500950397 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E91755C187689D500950397 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E91755D187689D500950397 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E917565187689D500950397 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E917566187689D500950397 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E91757B187689D500950397 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E91757C187689D500950397 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E917580187689D500950397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E917581187689D500950397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E917583187689D500950397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDropDownMultipleSelection/KDropDownMultipleSelection-Prefix.pch";
+				INFOPLIST_FILE = "KDropDownMultipleSelection/KDropDownMultipleSelection-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E917584187689D500950397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDropDownMultipleSelection/KDropDownMultipleSelection-Prefix.pch";
+				INFOPLIST_FILE = "KDropDownMultipleSelection/KDropDownMultipleSelection-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5E917586187689D500950397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KDropDownMultipleSelection.app/KDropDownMultipleSelection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDropDownMultipleSelection/KDropDownMultipleSelection-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KDropDownMultipleSelectionTests/KDropDownMultipleSelectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5E917587187689D500950397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KDropDownMultipleSelection.app/KDropDownMultipleSelection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDropDownMultipleSelection/KDropDownMultipleSelection-Prefix.pch";
+				INFOPLIST_FILE = "KDropDownMultipleSelectionTests/KDropDownMultipleSelectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E91754B187689D400950397 /* Build configuration list for PBXProject "KDropDownMultipleSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E917580187689D500950397 /* Debug */,
+				5E917581187689D500950397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E917582187689D500950397 /* Build configuration list for PBXNativeTarget "KDropDownMultipleSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E917583187689D500950397 /* Debug */,
+				5E917584187689D500950397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E917585187689D500950397 /* Build configuration list for PBXNativeTarget "KDropDownMultipleSelectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E917586187689D500950397 /* Debug */,
+				5E917587187689D500950397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E917548187689D400950397 /* Project object */;
+}
