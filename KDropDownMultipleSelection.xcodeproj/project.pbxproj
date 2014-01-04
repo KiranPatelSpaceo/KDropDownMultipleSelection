@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E4390E91877EEE100008291 /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E4390E81877EEE100008291 /* LICENCE.txt */; };
+		5E4391031877F2FE00008291 /* kpod.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5E4391021877F2FE00008291 /* kpod.podspec */; };
 		5E917554187689D500950397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917553187689D500950397 /* Foundation.framework */; };
 		5E917556187689D500950397 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917555187689D500950397 /* CoreGraphics.framework */; };
 		5E917558187689D500950397 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E917557187689D500950397 /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		5E4390E81877EEE100008291 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
+		5E4391021877F2FE00008291 /* kpod.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = kpod.podspec; path = kpod/kpod.podspec; sourceTree = "<group>"; };
 		5E917550187689D500950397 /* KDropDownMultipleSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KDropDownMultipleSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E917553187689D500950397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E917555187689D500950397 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,6 +98,7 @@
 		5E917547187689D400950397 = {
 			isa = PBXGroup;
 			children = (
+				5E4391021877F2FE00008291 /* kpod.podspec */,
 				5E4390E81877EEE100008291 /* LICENCE.txt */,
 				5E917559187689D500950397 /* KDropDownMultipleSelection */,
 				5E917578187689D500950397 /* KDropDownMultipleSelectionTests */,
@@ -264,6 +267,7 @@
 				5E91755E187689D500950397 /* InfoPlist.strings in Resources */,
 				5E4390E91877EEE100008291 /* LICENCE.txt in Resources */,
 				5E9175971876965100950397 /* done@2x.png in Resources */,
+				5E4391031877F2FE00008291 /* kpod.podspec in Resources */,
 				5E917567187689D500950397 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
