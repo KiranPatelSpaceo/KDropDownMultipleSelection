@@ -69,10 +69,9 @@
     NSRange range = NSMakeRange(0, [lbl.text length]);
     CGSize constraint;
         constraint= CGSizeMake(287 ,MAXFLOAT);
-    CGSize size;
-    NSString *ver = [[UIDevice currentDevice] systemVersion];
-    float ver_float = [ver floatValue];
-    if (ver_float>6.0) {
+    CGSize size;    
+
+    if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)) {
         NSDictionary *attributes = [lbl.attributedText attributesAtIndex:0 effectiveRange:&range];
         CGSize boundingBox = [lbl.text boundingRectWithSize:constraint options: NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
         

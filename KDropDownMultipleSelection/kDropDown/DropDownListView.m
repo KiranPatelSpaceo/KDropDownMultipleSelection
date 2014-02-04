@@ -201,7 +201,8 @@
 
     CGContextSetShadowWithColor(ctx, CGSizeMake(0, 1), 0.5f, [UIColor blackColor].CGColor);
     [[UIColor colorWithWhite:1 alpha:1.] setFill];
-    if ([[[UIDevice currentDevice] systemVersion] floatValue]>6.0) {
+    
+    if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)) {
         UIFont *font = [UIFont fontWithName:@"Helvetica" size:16.0];
         UIColor *cl=[UIColor whiteColor];
         
