@@ -68,8 +68,8 @@
 {
     NSRange range = NSMakeRange(0, [lbl.text length]);
     CGSize constraint;
-        constraint= CGSizeMake(287 ,MAXFLOAT);
-    CGSize size;    
+        constraint= CGSizeMake(288 ,MAXFLOAT);
+    CGSize size;
 
     if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)) {
         NSDictionary *attributes = [lbl.attributedText attributesAtIndex:0 effectiveRange:&range];
