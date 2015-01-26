@@ -217,7 +217,7 @@
     CGContextFillRect(ctx, separatorRect);
     
 }
--(void)SetBackGroundDropDwon_R:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alph{
+-(void)SetBackGroundDropDown_R:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alph{
     R=r;
     G=g;
     B=b;
