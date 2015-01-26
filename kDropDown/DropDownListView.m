@@ -35,6 +35,11 @@
     if (self = [super initWithFrame:rect])
     {
         self.backgroundColor = [UIColor clearColor];
+        self.layer.shadowColor = [UIColor blackColor].CGColor;
+        self.layer.shadowOffset = CGSizeMake(2.5, 2.5);
+        self.layer.shadowRadius = 2.0f;
+        self.layer.shadowOpacity = 0.5f;
+        
         _kTitleText = [aTitle copy];
         _kDropDownOption = [aOptions copy];
         self.arryData=[[NSMutableArray alloc]init];
