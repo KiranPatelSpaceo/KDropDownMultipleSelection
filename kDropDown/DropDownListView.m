@@ -48,6 +48,7 @@
                                                                    rect.size.width - 2 * DROPDOWNVIEW_SCREENINSET,
                                                                    rect.size.height - 2 * DROPDOWNVIEW_SCREENINSET - DROPDOWNVIEW_HEADER_HEIGHT - RADIUS)];
         _kTableView.separatorColor = [UIColor colorWithWhite:1 alpha:.2];
+        _kTableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 20);
         _kTableView.backgroundColor = [UIColor clearColor];
         _kTableView.dataSource = self;
         _kTableView.delegate = self;
@@ -164,11 +165,8 @@
 }
 
 #pragma mark - TouchTouchTouch
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     // tell the delegate the cancellation
-    
-    
 }
 
 #pragma mark - DrawDrawDraw
