@@ -16,7 +16,7 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         self.textLabel.textColor = [UIColor whiteColor];
-        self.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15.];
+        self.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:15.];
     }
     return self;
 }
