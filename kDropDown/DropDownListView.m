@@ -11,7 +11,7 @@
 
 #define DROPDOWNVIEW_SCREENINSET 0
 #define DROPDOWNVIEW_HEADER_HEIGHT 50.
-#define RADIUS 7.5f
+#define RADIUS 5.0f
 
 
 @interface DropDownListView (private)
@@ -180,7 +180,6 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
     // Draw the background with shadow
-    CGContextSetShadowWithColor(ctx, CGSizeZero, 6., [UIColor colorWithWhite:0 alpha:1.0].CGColor);
     [[UIColor colorWithRed:R/255 green:G/255 blue:B/255 alpha:A] setFill];
     
     float x = DROPDOWNVIEW_SCREENINSET;
@@ -199,8 +198,7 @@
     CGPathRelease(path);
     
     // Draw the title and the separator with shadow
-
-    CGContextSetShadowWithColor(ctx, CGSizeMake(0, 1), 0.5f, [UIColor blackColor].CGColor);
+    CGContextSetShadowWithColor(ctx, CGSizeMake(1, 1), 0.5f, [UIColor blackColor].CGColor);
     [[UIColor colorWithWhite:1 alpha:1.] setFill];
     
     if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)) {
