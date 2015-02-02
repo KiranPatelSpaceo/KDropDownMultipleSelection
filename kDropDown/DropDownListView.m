@@ -35,6 +35,7 @@
     if (self = [super initWithFrame:rect])
     {
         self.backgroundColor = [UIColor clearColor];
+        self.layer.cornerRadius = 7.5f;
         self.layer.shadowColor = [UIColor blackColor].CGColor;
         self.layer.shadowOffset = CGSizeMake(2.5, 2.5);
         self.layer.shadowRadius = 2.0f;
@@ -48,7 +49,7 @@
                                                                    rect.size.width - 2 * DROPDOWNVIEW_SCREENINSET,
                                                                    rect.size.height - 2 * DROPDOWNVIEW_SCREENINSET - DROPDOWNVIEW_HEADER_HEIGHT - RADIUS)];
         _kTableView.separatorColor = [UIColor colorWithWhite:1 alpha:.2];
-        _kTableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 20);
+        _kTableView.separatorInset = UIEdgeInsetsZero;
         _kTableView.backgroundColor = [UIColor clearColor];
         _kTableView.dataSource = self;
         _kTableView.delegate = self;
