@@ -28,7 +28,7 @@
     [Dropobj showInView:self.view animated:YES];
     
     /*----------------Set DropDown backGroundColor-----------------*/
-    [Dropobj SetBackGroundDropDwon_R:0.0 G:108.0 B:194.0 alpha:0.70];
+    [Dropobj SetBackGroundDropDown_R:0.0 G:108.0 B:194.0 alpha:0.70];
     
 }
 - (void)DropDownListView:(DropDownListView *)dropdownListView didSelectedIndex:(NSInteger)anIndex{

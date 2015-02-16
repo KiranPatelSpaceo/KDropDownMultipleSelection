@@ -23,7 +23,7 @@
 - (id)initWithTitle:(NSString *)aTitle options:(NSArray *)aOptions xy:(CGPoint)point size:(CGSize)size isMultiple:(BOOL)isMultiple;
 // If animated is YES, PopListView will be appeared with FadeIn effect.
 - (void)showInView:(UIView *)aView animated:(BOOL)animated;
--(void)SetBackGroundDropDwon_R:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alph;
+-(void)SetBackGroundDropDown_R:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alph;
 @end
 
 @protocol kDropDownListViewDelegate <NSObject>

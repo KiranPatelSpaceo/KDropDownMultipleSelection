@@ -11,7 +11,7 @@
 
 #define DROPDOWNVIEW_SCREENINSET 0
 #define DROPDOWNVIEW_HEADER_HEIGHT 50.
-#define RADIUS 0
+#define RADIUS 5.0f
 
 
 @interface DropDownListView (private)
@@ -31,10 +31,16 @@
 - (id)initWithTitle:(NSString *)aTitle options:(NSArray *)aOptions xy:(CGPoint)point size:(CGSize)size isMultiple:(BOOL)isMultiple
 {
     isMultipleSelection=isMultiple;
-    CGRect rect = CGRectMake(point.x, point.y,size.width,size.height);
+    float height = MIN(size.height, DROPDOWNVIEW_HEADER_HEIGHT+[aOptions count]*44);
+    CGRect rect = CGRectMake(point.x, point.y, size.width, height);
     if (self = [super initWithFrame:rect])
     {
         self.backgroundColor = [UIColor clearColor];
+        self.layer.shadowColor = [UIColor blackColor].CGColor;
+        self.layer.shadowOffset = CGSizeMake(2.5, 2.5);
+        self.layer.shadowRadius = 2.0f;
+        self.layer.shadowOpacity = 0.5f;
+        
         _kTitleText = [aTitle copy];
         _kDropDownOption = [aOptions copy];
         self.arryData=[[NSMutableArray alloc]init];
@@ -43,10 +49,12 @@
                                                                    rect.size.width - 2 * DROPDOWNVIEW_SCREENINSET,
                                                                    rect.size.height - 2 * DROPDOWNVIEW_SCREENINSET - DROPDOWNVIEW_HEADER_HEIGHT - RADIUS)];
         _kTableView.separatorColor = [UIColor colorWithWhite:1 alpha:.2];
+        _kTableView.separatorInset = UIEdgeInsetsZero;
         _kTableView.backgroundColor = [UIColor clearColor];
         _kTableView.dataSource = self;
         _kTableView.delegate = self;
         [self addSubview:_kTableView];
+        
         if (isMultipleSelection) {
             UIButton *btnDone=[UIButton  buttonWithType:UIButtonTypeCustom];
             [btnDone setFrame:CGRectMake(rect.origin.x+182,rect.origin.y-45, 82, 31)];
@@ -135,8 +143,7 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (isMultipleSelection) {
         if([self.arryData containsObject:indexPath]){
@@ -146,8 +153,7 @@
         }
         [tableView reloadData];
 
-    }
-    else{
+    } else {
     
         if (self.delegate && [self.delegate respondsToSelector:@selector(DropDownListView:didSelectedIndex:)]) {
             [self.delegate DropDownListView:self didSelectedIndex:[indexPath row]];
@@ -159,16 +165,12 @@
 }
 
 #pragma mark - TouchTouchTouch
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     // tell the delegate the cancellation
-    
-    
 }
 
 #pragma mark - DrawDrawDraw
-- (void)drawRect:(CGRect)rect
-{
+- (void)drawRect:(CGRect)rect {
     CGRect bgRect = CGRectInset(rect, DROPDOWNVIEW_SCREENINSET, DROPDOWNVIEW_SCREENINSET);
     CGRect titleRect = CGRectMake(DROPDOWNVIEW_SCREENINSET + 10, DROPDOWNVIEW_SCREENINSET + 10 + 5,
                                   rect.size.width -  2 * (DROPDOWNVIEW_SCREENINSET + 10), 30);
@@ -178,8 +180,6 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
     // Draw the background with shadow
-    // Draw the background with shadow
-    CGContextSetShadowWithColor(ctx, CGSizeZero, 6., [UIColor colorWithWhite:0 alpha:1.0].CGColor);
     [[UIColor colorWithRed:R/255 green:G/255 blue:B/255 alpha:A] setFill];
     
     float x = DROPDOWNVIEW_SCREENINSET;
@@ -198,26 +198,23 @@
     CGPathRelease(path);
     
     // Draw the title and the separator with shadow
-
-    CGContextSetShadowWithColor(ctx, CGSizeMake(0, 1), 0.5f, [UIColor blackColor].CGColor);
+    CGContextSetShadowWithColor(ctx, CGSizeMake(1, 1), 0.5f, [UIColor blackColor].CGColor);
     [[UIColor colorWithWhite:1 alpha:1.] setFill];
     
     if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)) {
-        UIFont *font = [UIFont fontWithName:@"Helvetica" size:16.0];
+        UIFont *font = [UIFont fontWithName:@"HelveticaNeue" size:16.0];
         UIColor *cl=[UIColor whiteColor];
         
-        
         NSDictionary *attributes = @{ NSFontAttributeName: font,NSForegroundColorAttributeName:cl};
-        
         [_kTitleText drawInRect:titleRect withAttributes:attributes];
     }
     else
         [_kTitleText drawInRect:titleRect withFont:[UIFont systemFontOfSize:16.]];
     
     CGContextFillRect(ctx, separatorRect);
-    
 }
--(void)SetBackGroundDropDwon_R:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alph{
+
+-(void)SetBackGroundDropDown_R:(CGFloat)r G:(CGFloat)g B:(CGFloat)b alpha:(CGFloat)alph {
     R=r;
     G=g;
     B=b;
