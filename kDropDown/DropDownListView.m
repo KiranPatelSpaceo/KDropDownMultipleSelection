@@ -140,6 +140,11 @@
     
     [cell addSubview:imgarrow];
     cell.textLabel.text = [_kDropDownOption objectAtIndex:row] ;
+  
+    if ([self.delegate respondsToSelector:@selector(DropDownListViewExtraSetupForCell:dropDownListView:)]) {
+    [self.delegate DropDownListViewExtraSetupForCell:cell dropDownListView:self];
+    }
+  
     return cell;
 }
 
