@@ -8,6 +8,8 @@
 
 
 @protocol kDropDownListViewDelegate;
+@class DropDownViewCell;
+
 @interface DropDownListView : UIView<UITableViewDataSource,UITableViewDelegate>{
 
     UITableView *_kTableView;
@@ -30,4 +32,5 @@
 - (void)DropDownListView:(DropDownListView *)dropdownListView didSelectedIndex:(NSInteger)anIndex;
 - (void)DropDownListView:(DropDownListView *)dropdownListView Datalist:(NSMutableArray*)ArryData;
 - (void)DropDownListViewDidCancel;
+- (void)DropDownListViewExtraSetupForCell:(DropDownViewCell *) cell dropDownListView:(DropDownListView *) dropdownListView; 
 @end
